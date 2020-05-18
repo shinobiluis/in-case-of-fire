@@ -1,0 +1,132 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: #151718;
+    color:#ABABAB;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.headerMenu{
+    width: 100%;
+    padding: 15px 0;
+}
+    .headerMenu ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .headerMenu ul li{
+        display: inline-block;
+        vertical-align: top;
+        height: 30px;
+        width: 100px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .headerMenu ul li a{
+        color: #ABABAB;
+        text-decoration: none;
+        transition: all .5s ease;
+        display: block;
+    }
+    .headerMenu ul li a:hover{
+        color: #DCDCAA;
+    }
+.wrapper{
+    display: grid;
+    justify-content: center;
+}
+.container{
+    padding: 10px 0;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #CCC;
+    background: #1b2c35;
+    border-radius: 10px;
+    display: grid;
+    grid-gap:1em;
+    grid-template-areas:"header header header header"
+                        "main main main main"
+                        "footer footer footer footer";
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.header{
+    grid-area: header;
+    padding: 0;
+    text-align: center;
+}
+    .icon-fire{
+        font-size: 8em;
+        color: #ff8e00;
+    }
+    .header img{
+        width: auto;
+        height: 150px;
+    }
+.main{
+    grid-area: main;
+    font-size: 3.5em;
+    text-align: center;
+    line-height: 2.5em;
+    text-transform: uppercase;
+    color: #DCDCAA;
+}
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .footer ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        list-style: none;
+        padding: 0;
+        margin:0;
+    }
+    .footer ul li{
+        text-align: center;
+        width: 150px;
+        font-size: 20px;
+        color:#C586C0;
+    }
+    .footer ul li i{
+        display: block;
+        font-size: 4em;
+        margin-bottom: 15px;
+        color: #8CC4E2;
+    }
+
+.footerSite{
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+}
+    .footerSite ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .footerSite ul li{
+        display: inline-block;
+        vertical-align: top;
+        color:#C586C0;
+        margin: 20px 20px
+    }
+    .footerSite ul li a{
+        text-decoration: none;
+        color:#C586C0;
+    }
